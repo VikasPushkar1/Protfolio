@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website | Vikas Pushkar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/vikas.png" >
+    <script src="https://kit.fontawesome.com/6070487b40.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+        <nav>
+            <img src="images/web-developer.svg" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+    </nav>
+    <div class="header-text">
+        <p>Software Developer</p>
+        <h1>Hi, I'm <span>Vikas </span><br>Pushkar From India</h1>
+        <a href="https://drive.google.com/file/d/1uxSIacD92kzB8ht0KNVv8RJZ93iHh5Gw/view?usp=sharing" class="btn">Download CV</a>
+    </div>
+</div>
+</div>
+<!-----------------------------about------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif">
+            </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am an enthusiastic developer always seeking new opportunity and technology to learn and grow more. I am confident in my ability to comeup with interesting ideas and code my way out through them.
+                        Skilled in Java, Algorithms, Data Structures, Object-Oriented Programming (OOP), FrontEnd Development (HTML, CSS and JavaScript), and Database (MYSQL). Strong engineering professional in Information Technology from Bhagwan Parshuram Institute of Technology. </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Problem Solving</span><br>DSA in Java Language</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                            
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Looking for opportunity</span><br>Looking for an opportunity to work
+                                    in an organization that allows me to
+                                    enhance my knowledge and skills and
+                                    also allow me to implement my knowledge and skills for the betterment of
+                                    the organization..
+                                    </li>
+                                
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022 - Current</span><br>Upskill MySelf</li>
+                                <li><span>2018 - 2022</span><br>B.Tech from BPIT Delhi</li>
+                                <li><span>2017 - 2018</span><br>Class(XII) from St. Marks Public School</li>
+                            </ul>
+                        </div>
+                 </div>
+        </div>
+    </div>
+</div>
+<!---------------------------services------------------------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>FrontEnd Developer</h2>
+                <p>I am a Passionate Programmer. Developing Frontend Experiences using HTML,CSS and JavaScript.
+                    I try to keep things simple, clean and efficient.</p>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Problem <br> Solver </h2>
+                <p>I am a Passionate Programmer. I am having Knowledge of Data Structure and Algorithms in laguage of Java.
+                    I am having lot of expouser of problem solving in leetcode and GFG
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Backend Developer </h2>
+                <p>I am a Passionate Programmer. I am having  Some Knowledg of Backend also but still am i am in Learning Phase Technologies that i Know is MySQl.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------------------------Contact--------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>vikaspushkar9354@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9354061119</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vikas-pushkar-bb88a5154/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/VikasPushkar1"><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                
+            </div>
+            <div class="contact-right">
+                <form >
+                    <input type="text" name="Name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Your Email">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©️ Vikas. Made <i class="fa-solid fa-user-tie"></i> by Vikas Pushkar</p>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+    
+</body>
+</html>
